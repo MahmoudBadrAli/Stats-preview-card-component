@@ -161,12 +161,19 @@ body {
   height: 100%;
 }
 
+.container .right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: hsl(277deg 100% 50.78% / 31%);
+}
+
 .container .right img {
   max-width: 100%;
   width: 487px;
   height: 100%;
-  /* width: 540px;
-  height: 446px; */
   border-radius: 0 10px 10px 0;
 }
 
@@ -192,15 +199,6 @@ body {
   .container .right img {
     width: 350px;
   }
-}
-
-.container .right::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 0 10px 10px 0;
-  background-color: hsl(277deg 100% 50.78% / 42%);
 }
 
 @media (max-width: 710px) {
